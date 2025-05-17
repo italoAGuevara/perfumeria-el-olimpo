@@ -4,11 +4,12 @@ toggleButton.id = "toggleChatBotBtn";
 toggleButton.innerText = "💬 Chat";
 document.body.appendChild(toggleButton);
 
-
-
 // Chatbot HTML
 const chatBotContainer = document.getElementById("chatBot");
-fetch('chatbot/chatbot.html')
+var path = window.location.pathname;
+var page = path.split("/").pop();
+const pathOfChatBot = page == 'index.html' ? 'components/chatbot/chatbot.html' : '../components/chatbot/chatbot.html';
+fetch(pathOfChatBot)
   .then(response => {
     if (!response.ok) throw new Error('No se pudo cargar el archivo');
     return response.text();
