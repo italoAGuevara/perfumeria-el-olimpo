@@ -8,7 +8,7 @@ document.body.appendChild(toggleButton);
 const chatBotContainer = document.getElementById("chatBot");
 var path = window.location.pathname;
 var page = path.split("/").pop();
-const pathOfChatBot = page == 'index.html' ? 'components/chatbot/chatbot.html' : '../components/chatbot/chatbot.html';
+const pathOfChatBot = (page == 'index.html' || page == '') ? 'components/chatbot/chatbot.html' : '../components/chatbot/chatbot.html';
 fetch(pathOfChatBot)
   .then(response => {
     if (!response.ok) throw new Error('No se pudo cargar el archivo');
