@@ -159,7 +159,7 @@ section:hover {
 h1,
 h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
-  color: #333; /* Color de texto */
+  color: white; /* Color de texto */
 }
 
 /* Estilo para los párrafos */
