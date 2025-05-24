@@ -16,9 +16,16 @@ fetch(pathOfChatBot)
   })
   .then(html => {
     chatBotContainer.innerHTML = html;
+    toggleButton.click();
+    toggleButton.click();
+    
     // Aquí puedes agregar la lógica para inicializar eventos, botones, etc.
   })
   .catch(error => console.error('Error:', error));
+
+  chatBotContainer.addEventListener('click', () => {
+  console.log('El chatbot fue clickeado!');
+});
 
 // Show/hide chatbot
 let chatVisible = false;

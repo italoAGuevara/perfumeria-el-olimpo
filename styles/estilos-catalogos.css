@@ -1,124 +1,149 @@
 body {
-margin: 0;
-font-family: arial, sans-serif;
-background-color: #f3f3d3;
-perspective: 1000px;
+  margin: 0;
+  font-family: arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #274650);
+  perspective: 1000px;
 }
 
+header {
+  display: flex;
+  min-height: 70px;
+  background: linear-gradient(to right, #0f2027, #274650);
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 100px;
+  margin: 10px;
+}
 
-    header {
-        display: flex;
-        min-height: 70px;
-        background-color: #4a90e2;
-        padding: 20px;
-        text-align: center;
-        justify-content: space-between;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-    }
-    .logo{
-        display: flex;
-        align-items: center;
-    }
-        .logo img{
-            height: 100px;
-            margin: 10px;
-        }
+/* Estilo del título */
+h1 {
+  font-family: "Arial", sans-serif; /* Cambia la fuente si lo deseas */
+  font-size: 3em; /* Tamaño de la fuente */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Alineación centrada */
+  position: relative; /* Posicionamiento relativo para efectos de sombra */
+  margin: 50px 0; /* Margen superior e inferior */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 5px; /* Espaciado entre letras */
+}
 
+nav {
+  margin-top: 10px;
+}
 
-        /* Estilo del título */
-        h1 {
-            font-family: 'Arial', sans-serif; /* Cambia la fuente si lo deseas */
-            font-size: 3em; /* Tamaño de la fuente */
-            color: #fff; /* Color del texto */
-            text-align: center; /* Alineación centrada */
-            position: relative; /* Posicionamiento relativo para efectos de sombra */
-            margin: 50px 0; /* Margen superior e inferior */
-            text-transform: uppercase; /* Texto en mayúsculas */
-            letter-spacing: 5px; /* Espaciado entre letras */
-        }
+ul {
+  list-style: none;
+  padding: 0;
+}
 
-        /* Efecto 3D */
-        h1::before, 
-        h1::after {
-            content: "PERFUMERIA EL OLIMPO"; /* Repetir el contenido */
-            position: absolute;
-            top: 0;
-            left: 0;
-            color: rgba(0, 0, 0, 0.2); /* Color de la sombra */
-            z-index: -1; /* Colocar detrás del texto principal */
-            transform: translate(10px, 10px) scale(1.1); /* Desplazamiento y escala */
-        }
-
-        /* Sombra de texto */
-        h1 {
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
-        }
-
-           /* Sombra de texto */
-        h2 {
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
-            font-style: italic; /* Texto en cursiva */
-            font-size: 1.5em;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra */
-            
-        }
-        nav {
-            margin-top: 10px;
-        }
-
-        lu {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            display: inline;
-            margin: 0 15px;
-        }
+li {
+  display: inline;
+  margin: 0 15px;
+}
 
 a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.5em;
-        padding: 10px 20px;
-        border-radius: 5px;
-        display: inline-block;
-        position: relative;
-        transition: transform 0.3s, box-shadow 0.2s;
-
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.2s;
 }
+/* Efecto 3D al pasar el ratón sobre los enlaces */
 a:hover {
-        background: rgba(43, 175, 236, 0.8);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        transform: translatey(-5px); /* Aumentar en el eje Z al pasar el mouse */
-        color: #050505; /* Cambiar de color */
-    }
+  background: rgba(43, 175, 236, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translatey(-5px); /* Aumentar en el eje Z al pasar el mouse */
+  color: #050505; /* Cambiar de color */
+}
 
+h2 {
+  font-size: 3em; /* Ajusta el tamaño de fuente */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alineación centrada */
+}
+
+h3 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+  font-style: italic; /* Texto en cursiva */
+  font-size: 1.5em;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra */
+}
 /* Estilo de la imagen */
 img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-   
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
+/* Estilo para las tablas */
+table {
+  width: 100%; /* Ancho completo */
+  background-color: white; /* Color de fondo de la tabla */
+  text-align: left; /* Alineación del texto en las celdas */
+  border-collapse: collapse; /* Colapsa bordes de la tabla */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra de la tabla */
+  border-radius: 8px; /* Esquinas redondeadas */
+  overflow: hidden; /* Evita que las esquinas redondeadas se rompan */
+}
+
+/* Estilos para celdas de la tabla */
+th,
+td {
+  border: solid 1px black; /* Bordes de celdas */
+  padding: 20px; /* Espaciado interno en celdas */
+  text-align: left; /* Alineación del texto en celdas */
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra interna para celdas */
+}
+
+/* Estilo para el encabezado de la tabla */
+thead {
+  background-color: #1f51f5; /* Color de fondo del encabezado de la tabla */
+  border-bottom: solid 5px; /* Borde inferior para separación */
+  color: white; /* Color del texto en el encabezado */
+}
+
+/* Estilo específico para las celdas de encabezado */
+th {
+  background-color: #43c28d; /* Color de fondo de celdas de encabezado */
+  color: rgb(255, 255, 255); /* Color del texto de celdas de encabezado */
+}
+
+/* Estilo para filas de tabla alternas */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo de filas pares */
+}
+
+/* Efecto al pasar el ratón sobre filas de la tabla */
+tr:hover {
+  background-color: #5ca3f5; /* Color de fondo al pasar el ratón sobre fila */
+}
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #4a90e2;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    
-        position: fixed; /* Mantiene el footer fijo en la parte inferior */
-        bottom: 0; /* Alinea el footer al fondo */
-        left: 0; /* Alinea el footer a la izquierda */
-        right: 0; /* Alinea el footer a la derecha */
-        text-align: center; /* Centra el texto en el footer */
-        padding: 10px; /* Espaciado dentro del footer */
-    
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(to right, #0f2027, #274650);
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  position: fixed; /* Mantiene el footer fijo en la parte inferior */
+  bottom: 0; /* Alinea el footer al fondo */
+  left: 0; /* Alinea el footer a la izquierda */
+  right: 0; /* Alinea el footer a la derecha */
+  text-align: center; /* Centra el texto en el footer */
+  padding: 10px; /* Espaciado dentro del footer */
 }

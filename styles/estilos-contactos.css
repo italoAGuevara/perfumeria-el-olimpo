@@ -1,131 +1,225 @@
- /* Estilo general del body */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f3f3d3;
-    perspective: 1000px; /* Añadir perspectiva */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #274650);
+  perspective: 1000px; /* Añadir perspectiva */
 }
 
-        /* Estilo del header */
-        header {
-            display: flex;
-            min-height: 70px;
-            background-color: #4a90e2;
-            padding: 20px;
-            text-align: center;
-            justify-content: space-between;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-        }
-       .logo{
-        display: flex;
-        align-items: center;
-       }
-        .logo img{
-            height: 100px;
-            margin: 10px;
-        }
+/* Estilo del header */
+header {
+  display: flex;
+  min-height: 70px;
+  background: linear-gradient(to right, #0f2027, #274650);
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 100px;
+  margin: 10px;
+}
 
+/* Estilo del título */
+h1 {
+  font-family: "Arial", sans-serif; /* Cambia la fuente si lo deseas */
+  font-size: 3em; /* Tamaño de la fuente */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Alineación centrada */
+  position: relative; /* Posicionamiento relativo para efectos de sombra */
+  margin: 50px 0; /* Margen superior e inferior */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 5px; /* Espaciado entre letras */
+}
 
-        /* Estilo del título */
-        h1 {
-            font-family: 'Arial', sans-serif; /* Cambia la fuente si lo deseas */
-            font-size: 3em; /* Tamaño de la fuente */
-            color: #fff; /* Color del texto */
-            text-align: center; /* Alineación centrada */
-            position: relative; /* Posicionamiento relativo para efectos de sombra */
-            margin: 50px 0; /* Margen superior e inferior */
-            text-transform: uppercase; /* Texto en mayúsculas */
-            letter-spacing: 5px; /* Espaciado entre letras */
-        }
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
 
-        /* Efecto 3D */
-        h1::before, 
-        h1::after {
-            content: "PERFUMERIA EL OLIMPO"; /* Repetir el contenido */
-            position: absolute;
-            top: 0;
-            left: 0;
-            color: rgba(0, 0, 0, 0.2); /* Color de la sombra */
-            z-index: -1; /* Colocar detrás del texto principal */
-            transform: translate(10px, 10px) scale(1.1); /* Desplazamiento y escala */
-        }
+th,
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
 
-        /* Sombra de texto */
-        h2 {
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
-            font-style: italic; /* Texto en cursiva */
-            font-size: 1.5em;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra */
-            
-        }
+th {
+  background-color: #009688;
+  color: #fff;
+  text-transform: uppercase;
+}
 
+tr:hover {
+  background-color: #84a7db;
+}
 
-        body{
-                font-family: 'Roboto', sans-serif; /* Usando Roboto de Google Fonts */
-            }
-        
+/* Estilo para botones de contacto (ejemplo: WhatsApp, Instagram) */
+.contact-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 2px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.whatsapp:hover {
+  background-color: #1da851;
+}
+
+.instagram {
+  background-color: #e1306c;
+}
+
+.instagram:hover {
+  background-color: #c1357d;
+}
+
+/* Responsive para dispositivos pequeños */
+@media (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+}
 
 /* Estilo de la navegación */
 nav {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-lu {
-    list-style: none;
-    padding: 0;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    position: relative;
-    transition: transform 0.3s, box-shadow 0.2s;
-
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.2s;
 }
-
 
 /* Efecto 3D al pasar el ratón sobre los enlaces */
 a:hover {
-    background: rgba(43, 175, 236, 0.8);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transform: translatey(-5px); /* Aumentar en el eje Z al pasar el mouse */
-    color: #050505; /* Cambiar de color */
+  background: rgba(43, 175, 236, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translatey(-5px); /* Aumentar en el eje Z al pasar el mouse */
+  color: #050505; /* Cambiar de color */
 }
 
+h2 {
+  font-size: 3em; /* Ajusta el tamaño de fuente */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alineación centrada */
+}
+
+h3 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+  font-style: italic; /* Texto en cursiva */
+  font-size: 1.5em;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra */
+}
 
 /* Estilo de la imagen */
 img {
-        display: block;
-        margin: 20px auto;
-        border-radius: 10px;
-   
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para mensajes de éxito o error (opcional) */
+.mensaje {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #4a90e2;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    
-        position: fixed; /* Mantiene el footer fijo en la parte inferior */
-        bottom: 0; /* Alinea el footer al fondo */
-        left: 0; /* Alinea el footer a la izquierda */
-        right: 0; /* Alinea el footer a la derecha */
-        text-align: center; /* Centra el texto en el footer */
-        padding: 10px; /* Espaciado dentro del footer */
-    
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(to right, #0f2027, #274650);
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  position: fixed; /* Mantiene el footer fijo en la parte inferior */
+  bottom: 0; /* Alinea el footer al fondo */
+  left: 0; /* Alinea el footer a la izquierda */
+  right: 0; /* Alinea el footer a la derecha */
+  text-align: center; /* Centra el texto en el footer */
+  padding: 10px; /* Espaciado dentro del footer */
 }

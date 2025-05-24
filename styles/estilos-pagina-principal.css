@@ -1,195 +1,218 @@
- /* Estilo general del body */
+/* Estilo general del body */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f3f3d3;
-    perspective: 1000px; /* Añadir perspectiva */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0f2027, #274650);
+  perspective: 1000px; /* Añadir perspectiva */
 }
 
-        /* Estilo del header */
-        header {
-            display: flex;
-            min-height: 70px;
-            background-color: #4a90e2;
-            padding: 20px;
-            text-align: center;
-            justify-content: space-between;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-        }
-       .logo{
-        display: flex;
-        align-items: center;
-       }
-        .logo img{
-            height: 100px;
-            margin: 10px;
-        }
-            /* Estilo del título */
-            h1 {
-                font-family: 'Arial', sans-serif; /* Cambia la fuente si lo deseas */
-                font-size: 3em; /* Tamaño de la fuente */
-                color: #fff; /* Color del texto */
-                text-align: center; /* Alineación centrada */
-                position: relative; /* Posicionamiento relativo para efectos de sombra */
-                margin: 50px 0; /* Margen superior e inferior */
-                text-transform: uppercase; /* Texto en mayúsculas */
-                letter-spacing: 5px; /* Espaciado entre letras */
-            }
+/* Estilo del header */
+header {
+  display: flex;
+  min-height: 70px;
+  background: linear-gradient(to right, #0f2027, #274650);
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 100px;
+  margin: 10px;
+}
+/* Estilo del título */
+h1 {
+  font-family: "Arial", sans-serif; /* Cambia la fuente si lo deseas */
+  font-size: 3em; /* Tamaño de la fuente */
+  color: rgba(247, 247, 247, 0.918); /* Color del texto  */
+  text-align: center; /* Alineación centrada */
+  position: relative; /* Posicionamiento relativo para efectos de sombra */
+  margin: 50px 0; /* Margen superior e inferior */
+  letter-spacing: 5px; /* Espaciado entre letras */
+}
 
-            /* Efecto 3D */
-            h1::before, 
-            h1::after {
-                content: "PERFUMERIA EL OLIMPO"; /* Repetir el contenido */
-                position: absolute;
-                top: 0;
-                left: 0;
-                color: rgba(0, 0, 0, 0.2); /* Color de la sombra */
-                z-index: -1; /* Colocar detrás del texto principal */
-                transform: translate(10px, 10px) scale(1.1); /* Desplazamiento y escala */
-            }
+/* Estilo de la navegación */
+nav {
+  margin-top: 10px;
+}
 
-            /* Sombra de texto */
-            h1 {
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
-            }
-
-
-      /* Estilo de la navegación */
-        nav {
-            margin-top: 10px;
-        }
-
-lu {
-    list-style: none;
-    padding: 0;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    position: relative;
-    transition: transform 0.3s, box-shadow 0.2s;
-
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.2s;
 }
 
 /* Efecto 3D al pasar el ratón sobre los enlaces */
 a:hover {
-    background: rgba(43, 175, 236, 0.8);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transform: translatey(-5px); /* Aumentar en el eje Z al pasar el mouse */
-    color: #050505; /* Cambiar de color */
+  background: rgba(43, 175, 236, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translatey(-5px); /* Aumentar en el eje Z al pasar el mouse */
+  color: #050505; /* Cambiar de color */
 }
 
 /* Estilo de la imagen */
 img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-   
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
-            section {
-                text-align: center; /* Centra el contenido dentro de la sección */
-                background-color: #f9f9f9; /* Color de fondo claro */
-                border-radius: 10px; /* Bordes redondeados */
-                padding: 20px; /* Espaciado interno */
-                margin: 20px; /* Espaciado externo */
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra exterior */
-                transition: transform 0.3s ease; /* Transición suave para hover */
-            }
-                .pag1sec1{
-                    height: 400px; /* Altura de la sección */
-                    background-image:url("../assets/el.monte.olimpo.jpg");
-                    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección*/
-                
-                    background-position: center; /* Centra la imagen */
-                    color: white; /* Color del texto */
-                    display: flex; /* Para centrar el contenido */
-                    justify-content: center; /* Centrar horizontalmente */
-                    align-items: center; /* Centrar verticalmente */
-                    text-align: center; /* Centrar el texto */
-            }
-            /* Efecto al pasar el mouse sobre la sección */
-            section:hover {
-                transform: translateY(-10px); /* Eleva la sección al pasar el mouse */
-            }
+section {
+  text-align: center; /* Centra el contenido dentro de la sección */
+  background-color: #f9f9f9; /* Color de fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Espaciado externo */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra exterior */
+  transition: transform 0.3s ease; /* Transición suave para hover */
+}
+.pag1sec1 {
+  height: 400px; /* Altura de la sección */
+  background-image: url("../assets/el.monte.olimpo.jpg");
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la sección*/
 
-            /* Estilo para los títulos */
-            h1, h2 {
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
-                color: #333; /* Color de texto */
-            }
+  background-position: center; /* Centra la imagen */
+  color: white; /* Color del texto */
+  display: flex; /* Para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-align: center; /* Centrar el texto */
+}
 
-            /* Estilo para los párrafos */
-            p {
-                line-height: 1.6; /* Espaciado entre líneas */
-                color: #555; /* Color del texto */
-            }
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 10px; /* espacio entre las celdas, opcional */
+  max-width: 600px; /* ancho máximo del contenedor, ajusta según necesites */
+  margin: 0 auto; /* centra el contenedor en la página */
+}
+section {
+  background: linear-gradient(
+    to right,
+    #1f34f5,
+    #52a9e4
+  ); /* color de fondo para visualizar */
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
 
-            /* Estilo para enlaces, imagen y su hover */
-            a {
-                text-decoration: none; /* Sin subrayado */
-            }
+.mujer {
+  background: linear-gradient(to right, #f539eb, #7228fa);
+}
 
-            img {
-                display: block; /* Para que la imagen ocupe su propio espacio */
-                border-radius: 10px; /* Bordes redondeados a la imagen */
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra de la imagen */
-                margin: 10px auto; /* Centrado */
-            }
+/* Pseudo-elemento con brillo intermitente */
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #ffffff;
+  pointer-events: none;
+  animation: flicker 1.5s infinite alternate;
+}
 
-       
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 50px #ffffff;
+    opacity: 3;
+  }
+}
 
+section img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover; /* para que la imagen cubra sin distorsionarse */
+  display: block; /* elimina espacios debajo de la imagen */
+  margin: 0 auto; /* centrar la imagen en la sección */
+}
 
+/* Efecto al pasar el mouse sobre la sección */
+section:hover {
+  transform: translateY(-10px); /* Eleva la sección al pasar el mouse */
+}
 
-               
-            
+/* Estilo para los títulos */
+h1,
+h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+  color: #333; /* Color de texto */
+}
 
+/* Estilo para los párrafos */
+p {
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: #555; /* Color del texto */
+}
 
+/* Estilo para enlaces, imagen y su hover */
+a {
+  text-decoration: none; /* Sin subrayado */
+}
+
+img {
+  display: block; /* Para que la imagen ocupe su propio espacio */
+  border-radius: 10px; /* Bordes redondeados a la imagen */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra de la imagen */
+  margin: 10px auto; /* Centrado */
+}
 
 h2 {
-    font-size: 3.0em; /* Ajusta el tamaño de fuente */
-    color: #333; /* Color del texto */
-    text-transform: uppercase; /* Transforma el texto a mayúsculas */
-    text-shadow: 
-        1px 1px 0 #fff, /* Sombra blanca suave */
-        2px 2px 0 rgba(0, 0, 0, 0.2), /* Sombra negra para el efecto de profundidad */
-        3px 3px 0 rgba(0, 0, 0, 0.3); /* Sombra más intensa */
-    margin: 0; /* Elimina el margen por defecto */
+  font-size: 3em; /* Ajusta el tamaño de fuente */
+  color: #333; /* Color del texto */
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  text-shadow: 1px 1px 0 #fff,
+    /* Sombra blanca suave */ 2px 2px 0 rgba(0, 0, 0, 0.2),
+    /* Sombra negra para el efecto de profundidad */ 3px 3px 0
+      rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  margin: 0; /* Elimina el margen por defecto */
 }
 
+h3 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+  font-style: italic; /* Texto en cursiva */
+  font-size: 3.5em;
+  color: #ffffff;
+  text-align: center; /* Alineación centrada */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra */
+}
 
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(to right, #0f2027, #203a43);
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 
-    footer {
-        text-align: center;
-        padding: 10px 0;
-        background-color: #4a90e2;
-        color: white;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-
-        
-            position: fixed; /* Mantiene el footer fijo en la parte inferior */
-            bottom: 0; /* Alinea el footer al fondo */
-            left: 0; /* Alinea el footer a la izquierda */
-            right: 0; /* Alinea el footer a la derecha */
-            text-align: center; /* Centra el texto en el footer */
-            padding: 10px; /* Espaciado dentro del footer */
-        
-    }
-
-
-
-
- 
+  position: fixed; /* Mantiene el footer fijo en la parte inferior */
+  bottom: 0; /* Alinea el footer al fondo */
+  left: 0; /* Alinea el footer a la izquierda */
+  right: 0; /* Alinea el footer a la derecha */
+  text-align: center; /* Centra el texto en el footer */
+  padding: 10px; /* Espaciado dentro del footer */
+}
